@@ -39,7 +39,7 @@ export default function Faq() {
             질문
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-muted">
-            더 궁금한 점은 앱의 문의하기 메뉴로 보내주세요.
+            더 궁금한 점은 <a href="mailto:dev@kanaria.ai" className="font-semibold text-ink underline-offset-4 hover:underline">dev@kanaria.ai</a>로 보내 주세요.
           </p>
         </Reveal>
         <Reveal delay={100}>

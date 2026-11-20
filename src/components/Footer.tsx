@@ -11,13 +11,22 @@ export default function Footer() {
             만듭니다.
           </p>
         </div>
-        <nav aria-label="바닥글 메뉴" className="grid grid-cols-2 gap-x-12 gap-y-3 text-sm md:grid-cols-3">
-          <a href="#bidet" className="text-ink-2 hover:text-ink">스마트 비데</a>
-          <a href="#app" className="text-ink-2 hover:text-ink">카나리아 앱</a>
-          <a href="#how" className="text-ink-2 hover:text-ink">작동 원리</a>
-          <a href="#faq" className="text-ink-2 hover:text-ink">FAQ</a>
-          <a href="#download" className="text-ink-2 hover:text-ink">출시 알림</a>
-        </nav>
+        <div className="flex flex-col gap-10 sm:flex-row sm:gap-16">
+          <nav aria-label="바닥글 메뉴" className="grid grid-cols-2 gap-x-12 gap-y-3 text-sm">
+            <a href="#bidet" className="text-ink-2 hover:text-ink">스마트 비데</a>
+            <a href="#app" className="text-ink-2 hover:text-ink">카나리아 앱</a>
+            <a href="#how" className="text-ink-2 hover:text-ink">작동 원리</a>
+            <a href="#faq" className="text-ink-2 hover:text-ink">FAQ</a>
+            <a href="#download" className="text-ink-2 hover:text-ink">출시 알림</a>
+            <a href="#contact" className="text-ink-2 hover:text-ink">문의</a>
+          </nav>
+          <div className="text-sm">
+            <p className="font-semibold text-ink">문의</p>
+            <a href="mailto:dev@kanaria.ai" className="mt-3 block text-ink-2 hover:text-ink">
+              dev@kanaria.ai
+            </a>
+          </div>
+        </div>
       </div>
       <div className="border-t border-line">
         <div className="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-6 text-xs leading-relaxed text-muted-2 md:flex-row md:items-center md:justify-between">

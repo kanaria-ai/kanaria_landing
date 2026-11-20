@@ -8,6 +8,7 @@ import HowItWorks from "@/components/HowItWorks";
 import Trust from "@/components/Trust";
 import Faq from "@/components/Faq";
 import Cta from "@/components/Cta";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
         <Trust />
         <Faq />
         <Cta />
+        <Contact />
       </main>
       <Footer />
     </>
