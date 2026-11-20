@@ -20,8 +20,10 @@ export const metadata: Metadata = {
     "배변 기록",
     "헬스케어 앱",
   ],
+  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
+    url: "/",
     locale: "ko_KR",
     siteName: "카나리아",
     title: "카나리아 | 비데가 기록하는 장 건강",
