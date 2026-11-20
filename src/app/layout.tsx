@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-const siteUrl = "https://kanaria.ai";
+const siteUrl = "https://www.kanaria.ai";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
