@@ -24,8 +24,8 @@ src/app/
   apple-icon.png   # iOS 홈 화면 아이콘 (앱 아이콘)
 src/app/actions/waitlist.ts  # 출시 알림(waiting list) 서버 액션
 supabase/waitlist.sql        # waitlist 테이블 생성 SQL
-src/components/    # 섹션별 컴포넌트 (Nav, Hero, Problem, SystemOverview, SmartBidet,
-                   # AppFeatures, HowItWorks, Trust, Faq, Cta, Footer)
+src/components/    # 섹션별 컴포넌트 (Nav, Hero, Problem, HowItWorks, SmartBidet,
+                   # AppFeatures, Trust, Faq, Cta, Contact, Footer)
 public/app/        # 앱 스크린샷 (kanaria_app/screenshots 에서 복사)
 public/brand/      # 로고 SVG, 앱 아이콘
 ```

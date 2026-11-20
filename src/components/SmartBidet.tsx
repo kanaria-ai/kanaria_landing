@@ -29,10 +29,10 @@ const specs = [
 export default function SmartBidet() {
   return (
     <section id="bidet" className="scroll-mt-20 bg-surface">
-      <div className="mx-auto grid max-w-6xl items-center gap-14 px-5 py-24 md:grid-cols-2 md:py-32">
+      <div className="mx-auto grid max-w-6xl items-center gap-14 px-5 py-24 md:grid-cols-[0.8fr_1.2fr] md:py-32">
         <Reveal>
           <div className="relative">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-gradient-to-b from-brand-soft via-brand-tint to-white shadow-card">
+            <div className="relative mx-auto aspect-square w-full max-w-[420px] overflow-hidden rounded-[2rem] bg-gradient-to-b from-brand-soft via-brand-tint to-white shadow-card">
               <BidetIllustration />
               <div className="absolute left-5 top-5 rounded-pill bg-ink px-3 py-1.5 text-xs font-semibold text-white">
                 카나리아 스마트 비데
@@ -63,8 +63,8 @@ export default function SmartBidet() {
               기록은 비데가 알아서
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted">
-              버튼을 누르거나 앱을 켤 필요가 없습니다. 카나리아 스마트 비데가 사용을 감지해서
-              누가 썼는지 구분하고 기록까지 알아서 보냅니다.
+              버튼을 누르거나 앱을 켤 필요가 없습니다. 비데가 앉은 시각과 소요 시간, 횟수, 누가 썼는지를
+              기록해서 앱으로 보냅니다. 세정과 건조 같은 기본 기능은 일반 비데와 같습니다.
             </p>
           </Reveal>
           <ul className="mt-10 space-y-6">

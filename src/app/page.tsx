@@ -1,7 +1,6 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import Problem from "@/components/Problem";
-import SystemOverview from "@/components/SystemOverview";
 import SmartBidet from "@/components/SmartBidet";
 import AppFeatures from "@/components/AppFeatures";
 import HowItWorks from "@/components/HowItWorks";
@@ -18,10 +17,9 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <Problem />
-        <SystemOverview />
+        <HowItWorks />
         <SmartBidet />
         <AppFeatures />
-        <HowItWorks />
         <Trust />
         <Faq />
         <Cta />
