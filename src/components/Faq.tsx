@@ -44,8 +44,7 @@ export default function Faq() {
     <section id="faq" className="scroll-mt-20 bg-surface">
       <div className="mx-auto grid max-w-6xl gap-12 px-5 py-24 md:grid-cols-[0.8fr_1.2fr] md:py-32">
         <Reveal>
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brand-deep">FAQ</p>
-          <h2 className="mt-4 text-3xl font-extrabold leading-tight tracking-[-0.02em] md:text-5xl">
+          <h2 className="text-3xl font-extrabold leading-tight tracking-[-0.02em] md:text-5xl">
             자주 묻는
             <br />
             질문
@@ -60,7 +59,7 @@ export default function Faq() {
               <details key={f.q} className="faq group px-6">
                 <summary className="flex items-center justify-between gap-6 py-5 text-left text-[17px] font-semibold">
                   {f.q}
-                  <span className="faq-icon flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-surface text-xl leading-none text-ink-2">
+                  <span className="faq-icon flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-surface text-xl leading-none text-ink-2 transition-colors group-hover:bg-brand-soft">
                     +
                   </span>
                 </summary>

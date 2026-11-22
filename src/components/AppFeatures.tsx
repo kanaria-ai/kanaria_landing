@@ -41,7 +41,7 @@ export default function AppFeatures() {
     <section id="app" className="scroll-mt-20">
       <div className="mx-auto max-w-6xl px-5 pt-24 md:pt-32">
         <Reveal>
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-brand-deep">Kanaria App</p>
+          <p className="text-sm font-semibold text-brand-deep">카나리아 앱</p>
           <h2 className="mt-4 max-w-2xl text-3xl font-extrabold leading-tight tracking-[-0.02em] md:text-5xl">
             쌓인 기록을
             <br />
