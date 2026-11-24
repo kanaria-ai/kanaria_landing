@@ -5,8 +5,8 @@ const stroke = { stroke: "#111", strokeWidth: 1.8, strokeLinecap: "round", strok
 
 const rows: { t: string; d: string; icon: ReactNode }[] = [
   {
-    t: "사진은 언제나 블러로",
-    d: "사진 기록을 쓰더라도 화면에는 항상 흐리게만 표시됩니다. 원본은 본인 계정의 비공개 저장소에만 보관됩니다.",
+    t: "암호화해서 보관하고 폐기",
+    d: "분석에 쓰인 데이터는 암호화된 상태로 보관합니다. 보관 기간이 지나거나 계정을 삭제하면 모두 폐기합니다.",
     icon: (
       <>
         <path d="M3 3l18 18" {...stroke} />
@@ -16,7 +16,7 @@ const rows: { t: string; d: string; icon: ReactNode }[] = [
   },
   {
     t: "전송 구간 암호화",
-    d: "비데와 서버 사이의 모든 기록은 TLS로 암호화된 채널을 통해 오갑니다. 기기별 인증으로 다른 기기의 데이터와 섞이지 않습니다.",
+    d: "비데와 서버 사이의 모든 데이터는 TLS로 암호화된 채널을 통해 오갑니다. 기기별 인증으로 다른 기기의 데이터와 섞이지 않습니다.",
     icon: (
       <>
         <rect x="5" y="11" width="14" height="9" rx="2.5" {...stroke} />
@@ -26,7 +26,7 @@ const rows: { t: string; d: string; icon: ReactNode }[] = [
   },
   {
     t: "내 기록은 내 것",
-    d: "가족이 같은 비데를 써도 기록은 계정별로 분리됩니다. 계정을 지우면 기록과 사진도 함께 삭제됩니다.",
+    d: "가족이 같은 비데를 써도 기록은 계정별로 분리됩니다. 다른 구성원의 기록은 서로 볼 수 없습니다.",
     icon: (
       <>
         <circle cx="12" cy="8.5" r="3.5" {...stroke} />

@@ -13,14 +13,14 @@ const types = [
   { n: 7, d: "덩어리 없는 액체 형태", c: "#E53935" },
 ];
 
-function feedback(n: number) {
-  if (n === 3 || n === 4) return "3형과 4형은 정상 범위입니다.";
-  const side = n < 3 ? "단단한 편" : "묽은 편";
-  return `${side}에 속합니다. 며칠 이어지는지는 추이 차트에서 볼 수 있어요.`;
+function verdict(n: number) {
+  if (n === 3 || n === 4) return "정상 범위";
+  return n < 3 ? "단단한 편" : "묽은 편";
 }
 
 export default function RecordDemo() {
-  const [picked, setPicked] = useState<number | null>(null);
+  const [picked, setPicked] = useState(4);
+  const current = types[picked - 1];
 
   return (
     <div className="rounded-[2rem] bg-white p-5 shadow-float sm:p-7">
@@ -31,12 +31,23 @@ export default function RecordDemo() {
           <p className="mt-1 text-sm text-white/70">사용자: 나</p>
         </div>
         <span className="shrink-0 rounded-pill bg-brand px-3 py-1.5 text-xs font-bold text-ink">
-          비데가 자동 기록
+          자동 기록
         </span>
       </div>
 
-      <p className="mt-6 text-lg font-bold">어떤 모양이었나요?</p>
-      <p className="mt-1 text-sm text-muted">하나를 눌러 보세요. 앱에서 하는 일은 이게 전부입니다.</p>
+      <div aria-live="polite" className="mt-4 rounded-2xl bg-brand-tint p-5">
+        <p className="text-xs font-semibold text-muted">AI 분석 결과</p>
+        <p className="mt-1.5 flex items-center gap-2.5 text-2xl font-extrabold tracking-tight">
+          <span className="h-3.5 w-3.5 shrink-0 rounded-full" style={{ background: current.c }} />
+          {current.n}형 · {verdict(current.n)}
+        </p>
+        <p className="mt-1.5 text-sm text-ink-2">{current.d}</p>
+      </div>
+
+      <p className="mt-6 text-lg font-bold">AI가 구분하는 일곱 가지 유형</p>
+      <p className="mt-1 text-sm text-muted">
+        하나씩 눌러 보세요. 실제로는 고를 필요 없이 결과만 받습니다.
+      </p>
 
       <div className="mt-4 space-y-2">
         {types.map((t) => {
@@ -58,18 +69,7 @@ export default function RecordDemo() {
           );
         })}
       </div>
-
-      <div aria-live="polite" className="mt-4 min-h-[4.5rem] rounded-xl bg-brand-tint px-4 py-3 text-sm leading-relaxed">
-        {picked === null ? (
-          <p className="text-muted">고르면 이 자리에 결과가 나옵니다.</p>
-        ) : (
-          <>
-            <p className="font-bold text-ink">{picked}형으로 저장했어요.</p>
-            <p className="mt-0.5 text-ink-2">{feedback(picked)}</p>
-          </>
-        )}
-      </div>
-      <p className="mt-3 text-xs text-muted-2">실제 앱 화면을 단순하게 옮긴 예시입니다.</p>
+      <p className="mt-3 text-xs text-muted-2">이해를 돕기 위한 예시 화면입니다.</p>
     </div>
   );
 }

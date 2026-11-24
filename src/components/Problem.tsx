@@ -23,15 +23,17 @@ export default function Problem() {
   return (
     <section className="mx-auto max-w-6xl px-5 py-24 md:py-32">
       <Reveal>
-        <p className="text-sm font-semibold text-brand-deep">왜 만들었나</p>
+        <p className="text-sm font-semibold text-brand-deep">
+          누구를 위한 제품인가요
+        </p>
         <h2 className="mt-4 max-w-2xl text-3xl font-extrabold leading-tight tracking-[-0.02em] md:text-5xl">
-          이런 분들을 생각하며
+          나의 장 건강을
           <br />
-          만들었습니다
+          숫자로 보고 싶은 분들
         </h2>
         <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
-          장 상태는 화장실 기록에 가장 먼저 나타납니다. 문제는 그걸 꾸준히 적는 사람이 거의 없다는
-          점입니다. 카나리아는 그 기록을 비데가 대신 남기게 합니다.
+          장 건강 상태는 화장실에서 제일 먼저 알 수 있습니다. <br></br>
+          카나리아 스마트 비데가 건강 기록을 자동으로 남기고 점수를 보여 줍니다.
         </p>
       </Reveal>
 
@@ -55,16 +57,19 @@ export default function Problem() {
 
       <Reveal delay={200}>
         <div className="mt-20 flex flex-col gap-6 border-t border-line pt-10 md:flex-row md:gap-14">
-          <p className="shrink-0 text-xl font-bold md:w-56">왜 이름이 카나리아인가요</p>
+          <p className="shrink-0 text-xl font-bold md:w-56">
+            왜 카나리아인가요
+          </p>
           <div className="max-w-2xl text-[16px] leading-relaxed text-ink-2">
             <p>
-              카나리아는 예전 광부들이 갱도에 데리고 들어가던 새입니다. 유해 가스에 사람보다 먼저 반응해서
-              위험을 일찍 알려 줬습니다. 몸의 변화도 화장실 기록에 먼저 나타나는 경우가 많아서 이 이름을
-              골랐습니다.
+              카나리아는 예전 광부들이 갱도에 데리고 들어가던 새입니다. 유해
+              가스에 사람보다 먼저 반응해서 위험을 일찍 알려 줬습니다. 카나리아
+              스마트 비데도 우리 몸의 변화를 화장실에서 가장 먼저 감지합니다.
             </p>
             <p className="mt-3">
-              카나리아헬스가 비데와 앱을 함께 만들고 있습니다. 기록이 끊기지 않으려면 기기와 앱이 처음부터
-              같이 설계돼야 한다고 봤습니다.
+              카나리아헬스는 스마트 비데와 앱을 함께 만듭니다. 기기와 앱을
+              처음부터 같이 설계하여 정확한 분석과 상세한 기록을 함께 할 수
+              있습니다.
             </p>
           </div>
         </div>
