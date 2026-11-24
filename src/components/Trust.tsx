@@ -6,7 +6,7 @@ const stroke = { stroke: "#111", strokeWidth: 1.8, strokeLinecap: "round", strok
 const rows: { t: string; d: string; icon: ReactNode }[] = [
   {
     t: "암호화해서 보관하고 폐기",
-    d: "분석에 쓰인 데이터는 보관 기간이 지나거나 계정을 삭제하면 모두 폐기합니다.",
+    d: "분석에 쓰인 데이터는 보관 기간이 지나거나 계정을 삭제하면 모두 폐기해요.",
     icon: (
       <>
         <path d="M3 3l18 18" {...stroke} />
@@ -16,7 +16,7 @@ const rows: { t: string; d: string; icon: ReactNode }[] = [
   },
   {
     t: "전송 구간 암호화",
-    d: "비데와 서버 사이의 모든 데이터는 TLS로 암호화된 채널을 통해 오갑니다. 기기별 인증으로 다른 기기의 데이터와 섞이지 않습니다.",
+    d: "비데와 서버 사이의 모든 데이터는 TLS로 암호화된 채널을 통해 오가요. 기기별 인증으로 다른 기기의 데이터와 섞이지 않아요.",
     icon: (
       <>
         <rect x="5" y="11" width="14" height="9" rx="2.5" {...stroke} />
@@ -26,7 +26,7 @@ const rows: { t: string; d: string; icon: ReactNode }[] = [
   },
   {
     t: "내 기록은 내 것",
-    d: "가족이 같은 비데를 써도 서로의 기록은 볼 수 없습니다.",
+    d: "가족이 같은 비데를 써도 서로의 기록은 볼 수 없어요.",
     icon: (
       <>
         <circle cx="12" cy="8.5" r="3.5" {...stroke} />
@@ -44,7 +44,7 @@ export default function Trust() {
           <h2 className="text-3xl font-extrabold leading-tight tracking-[-0.02em] md:text-5xl">
             데이터는 이렇게
             <br />
-            보호합니다
+            보호해요
           </h2>
         </Reveal>
         <ul className="divide-y divide-line border-y border-line">

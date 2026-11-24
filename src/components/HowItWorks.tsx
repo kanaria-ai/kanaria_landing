@@ -4,18 +4,18 @@ import RecordDemo from "./RecordDemo";
 const moments = [
   {
     when: "오전 7:42",
-    t: "평소처럼 앉습니다",
-    d: "비데가 착좌를 감지하고 기록을 시작합니다.",
+    t: "평소처럼 화장실에 앉아요",
+    d: "스마트 비데가 착좌를 감지하고 기록을 시작해요.",
   },
   {
     when: "오전 7:48",
-    t: "일어납니다",
-    d: "스마트 비데가 수집한 데이터가 안전하게 서버에 전송됩니다.",
+    t: "화장실 사용을 마쳐요",
+    d: "스마트 비데가 수집한 데이터가 안전하게 서버에 전송돼요.",
   },
   {
     when: "잠시 뒤",
-    t: "AI가 데이터를 분석합니다",
-    d: "대변의 모양과 상태를 분석해 유형을 분류하고 건강 스코어에 반영합니다. 앱을 열면 결과가 이미 들어와 있습니다.",
+    t: "AI가 데이터를 분석해요",
+    d: "대변의 모양과 상태를 분석해 유형을 분류하고 건강 스코어에 반영해요. 앱을 열면 결과가 이미 들어와 있어요.",
   },
 ];
 
@@ -39,7 +39,7 @@ export default function HowItWorks() {
             </h2>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted">
               화장실을 그대로 사용하세요. <br />
-              스마트 비데의 AI가 대변의 모양과 상태를 분석합니다.
+              스마트 비데의 AI가 대변의 모양과 상태를 분석해요.
             </p>
           </Reveal>
 
@@ -86,7 +86,7 @@ export default function HowItWorks() {
                 기록은 각자 계정으로
               </h3>
               <p className="mt-4 max-w-md text-[15px] leading-relaxed text-ink-2">
-                등록된 스마트폰 중 신호가 가장 센 사람의 기록으로 저장합니다.
+                등록된 스마트폰 중 신호가 가장 센 사람의 기록으로 저장해요.
               </p>
             </div>
             <div>
@@ -115,7 +115,7 @@ export default function HowItWorks() {
                 ))}
               </ul>
               <p className="mt-5 rounded-xl bg-brand-tint px-4 py-3 text-sm font-semibold">
-                이번 기록은 ‘나’의 계정으로 저장됩니다
+                이번 기록은 ‘나’의 계정으로 저장돼요
               </p>
             </div>
           </div>

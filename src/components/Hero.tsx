@@ -23,10 +23,10 @@ export default function Hero() {
             <br />장 건강을 기록하세요
           </h1>
           <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted">
-            화장실을 사용하면 비데가 자동으로 기록을 남깁니다. AI가 대변의
-            모양과 상태를 분석해
+            화장실을 사용하면 스마트 비데가 자동으로 기록을 남겨요. <br />
+            AI가 분석한
             <strong className="font-semibold text-ink"> 건강 스코어</strong>를
-            계산합니다.
+            확인해보세요.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a

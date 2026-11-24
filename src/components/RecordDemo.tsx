@@ -69,7 +69,7 @@ export default function RecordDemo() {
           );
         })}
       </div>
-      <p className="mt-3 text-xs text-muted-2">이해를 돕기 위한 예시 화면입니다.</p>
+      <p className="mt-3 text-xs text-muted-2">이해를 돕기 위한 예시 화면이에요.</p>
     </div>
   );
 }

@@ -7,7 +7,7 @@ const siteUrl = "https://www.kanaria.ai";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "카나리아 | 비데가 기록하는 장 건강",
+    default: "카나리아 | 스마트 비데가 기록하는 장 건강",
     template: "%s | 카나리아",
   },
   description:
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     url: "/",
     locale: "ko_KR",
     siteName: "카나리아",
-    title: "카나리아 | 비데가 기록하는 장 건강",
+    title: "카나리아 | 스마트 비데가 기록하는 장 건강",
     description:
       "매일 쓰는 비데가 장 건강을 기록합니다. 카나리아 스마트 비데와 카나리아 앱.",
   },

@@ -8,7 +8,7 @@ export default function Footer() {
           <Logo />
           <p className="mt-4 text-sm leading-relaxed text-muted">
             카나리아헬스는 화장실 기록으로 장 건강 흐름을 보여주는 스마트 비데와 앱을
-            만듭니다.
+            만들어요.
           </p>
         </div>
         <div className="flex flex-col gap-10 sm:flex-row sm:gap-16">
