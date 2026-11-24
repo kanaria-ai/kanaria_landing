@@ -46,9 +46,13 @@ export default function Problem() {
                 “{c.q}”
               </blockquote>
               <figcaption className="mt-4 flex gap-3 pl-1">
-                <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-soft">
-                  <Image src="/brand/logo.svg" alt="" width={16} height={18} />
-                </span>
+                <Image
+                  src="/brand/logo.svg"
+                  alt=""
+                  width={20}
+                  height={23}
+                  className="mt-0.5 shrink-0 self-start"
+                />
                 <p className="text-[15px] leading-relaxed text-ink-2">{c.a}</p>
               </figcaption>
             </figure>
