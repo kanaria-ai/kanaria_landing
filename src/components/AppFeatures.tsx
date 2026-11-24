@@ -29,10 +29,10 @@ const features = [
   {
     tag: "기기 & 가족",
     title: "비데 한 대로\n가족 각자의 기록",
-    desc: "기기 탭에서 연결 상태와 신호 세기를 확인하고 세정과 건조도 원격으로 실행합니다. 가족을 같은 기기에 등록하면 기록은 각자의 계정에 따로 저장됩니다.",
-    bullets: ["연결 상태와 사용 중인 사람 표시", "세정 · 건조 · 정지 원격 제어", "소유자/구성원 역할, 기기 별칭"],
+    desc: "가족을 같은 기기에 등록하면 기록은 각자의 계정에 따로 저장됩니다. 기기 탭에서 연결 상태와 지금 누가 쓰고 있는지 볼 수 있습니다.",
+    bullets: ["연결 상태와 사용 중인 사람 표시", "소유자/구성원 역할", "기기 별칭"],
     img: "/app/device-active.png",
-    alt: "카나리아 앱 기기 화면. 연결 상태, 원격 제어 버튼, 내 기기 목록",
+    alt: "카나리아 앱 기기 화면. 연결 상태와 내 기기 목록",
   },
 ];
 
@@ -41,8 +41,7 @@ export default function AppFeatures() {
     <section id="app" className="scroll-mt-20">
       <div className="mx-auto max-w-6xl px-5 pt-24 md:pt-32">
         <Reveal>
-          <p className="text-sm font-semibold text-brand-deep">카나리아 앱</p>
-          <h2 className="mt-4 max-w-2xl text-3xl font-extrabold leading-tight tracking-[-0.02em] md:text-5xl">
+          <h2 className="max-w-2xl text-3xl font-extrabold leading-tight tracking-[-0.02em] md:text-5xl">
             쌓인 기록을
             <br />
             한눈에 보는 앱
@@ -62,10 +61,8 @@ export default function AppFeatures() {
             >
               <Reveal>
                 <div>
-                  <span className="inline-flex rounded-pill bg-brand-soft px-3 py-1 text-xs font-bold text-ink">
-                    {f.tag}
-                  </span>
-                  <h3 className="mt-5 whitespace-pre-line text-3xl font-extrabold leading-tight tracking-[-0.02em] md:text-4xl">
+                  <p className="text-sm font-semibold text-muted">{f.tag}</p>
+                  <h3 className="mt-3 whitespace-pre-line text-2xl font-extrabold leading-snug tracking-[-0.02em] md:text-3xl">
                     {f.title}
                   </h3>
                   <p className="mt-5 text-[17px] leading-relaxed text-muted">{f.desc}</p>

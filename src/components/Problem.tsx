@@ -14,7 +14,7 @@ const cases = [
   },
   {
     q: "화장실을 가족이 같이 써서 내 기록만 따로 남기기 어려워요",
-    a: "비데 한 대를 같이 써도 휴대폰 신호로 사람을 구분합니다. 기록은 각자 계정에 따로 저장되고 서로 볼 수 없습니다.",
+    a: "비데 한 대를 같이 써도 스마트폰 신호로 사람을 구분합니다. 기록은 각자 계정에 따로 저장되고 서로 볼 수 없습니다.",
     shift: "md:mt-24",
   },
 ];
@@ -23,18 +23,15 @@ export default function Problem() {
   return (
     <section className="mx-auto max-w-6xl px-5 py-24 md:py-32">
       <Reveal>
-        <p className="text-sm font-semibold text-brand-deep">
-          누구를 위한 제품인가요
-        </p>
-        <h2 className="mt-4 max-w-2xl text-3xl font-extrabold leading-tight tracking-[-0.02em] md:text-5xl">
+        <h2 className="max-w-2xl text-3xl font-extrabold leading-tight tracking-[-0.02em] md:text-5xl">
           나의 장 건강을
           <br />
-          숫자로 보고 싶은 분들
+          점수로 확인하세요
         </h2>
         <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
           장 건강 상태는 화장실에서 제일 먼저 알 수 있습니다.
           <br />
-          카나리아 스마트 비데가 건강 기록을 자동으로 남기고 점수를 보여 줍니다.
+          카나리아 스마트 비데가 건강 기록을 자동으로 남깁니다.
         </p>
       </Reveal>
 

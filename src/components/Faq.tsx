@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     q: "가족이 같이 써도 기록이 섞이지 않나요?",
-    a: "각자의 휴대폰을 같은 기기에 등록해 두면 사용할 때 가장 가까운 휴대폰의 신호 세기로 사용자를 구분합니다. 기록은 각 계정으로 따로 저장됩니다.",
+    a: "각자의 스마트폰을 같은 기기에 등록해 두면 사용할 때 가장 가까운 스마트폰의 신호 세기로 사용자를 구분합니다. 기록은 각 계정으로 따로 저장됩니다.",
   },
   {
     q: "건강 스코어는 어떻게 계산되나요?",
@@ -45,9 +45,7 @@ export default function Faq() {
       <div className="mx-auto grid max-w-6xl gap-12 px-5 py-24 md:grid-cols-[0.8fr_1.2fr] md:py-32">
         <Reveal>
           <h2 className="text-3xl font-extrabold leading-tight tracking-[-0.02em] md:text-5xl">
-            자주 묻는
-            <br />
-            질문
+            자주 묻는 질문
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-muted">
             더 궁금한 점은 <a href="mailto:dev@kanaria.ai" className="font-semibold text-ink underline-offset-4 hover:underline">dev@kanaria.ai</a>로 보내 주세요.

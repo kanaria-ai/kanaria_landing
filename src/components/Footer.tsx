@@ -13,9 +13,8 @@ export default function Footer() {
         </div>
         <div className="flex flex-col gap-10 sm:flex-row sm:gap-16">
           <nav aria-label="바닥글 메뉴" className="grid grid-cols-2 gap-x-12 gap-y-3 text-sm">
-            <a href="#bidet" className="text-ink-2 hover:text-ink">스마트 비데</a>
+            <a href="#how" className="text-ink-2 hover:text-ink">스마트 비데</a>
             <a href="#app" className="text-ink-2 hover:text-ink">카나리아 앱</a>
-            <a href="#how" className="text-ink-2 hover:text-ink">작동 원리</a>
             <a href="#faq" className="text-ink-2 hover:text-ink">FAQ</a>
             <a href="#download" className="text-ink-2 hover:text-ink">출시 알림</a>
             <a href="#contact" className="text-ink-2 hover:text-ink">문의</a>

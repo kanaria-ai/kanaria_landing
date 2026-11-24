@@ -23,7 +23,8 @@ export default function Hero() {
             <br />장 건강을 기록하세요
           </h1>
           <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted">
-            화장실을 사용하면, 자동으로 비데가 기록을 남기고
+            화장실을 사용하면 비데가 자동으로 기록을 남깁니다. AI가 대변의
+            모양과 상태를 분석해
             <strong className="font-semibold text-ink"> 건강 스코어</strong>를
             계산합니다.
           </p>
@@ -41,20 +42,6 @@ export default function Hero() {
               작동 원리 보기
             </a>
           </div>
-          <ul className="mt-9 space-y-2 text-base text-ink-2">
-            {[
-              ["대변 모양과 상태는 ", "AI가 분석"],
-              ["화장실 사용은 비데가 ", "자동 기록"],
-              ["가족 구성원은 ", "자동 구분"],
-            ].map(([lead, key]) => (
-              <li key={key}>
-                {lead}
-                <span className="bg-[linear-gradient(transparent_58%,var(--color-brand)_58%)] px-0.5 font-bold text-ink">
-                  {key}
-                </span>
-              </li>
-            ))}
-          </ul>
         </div>
 
         <div className="relative mx-auto w-full max-w-[340px] md:max-w-none">

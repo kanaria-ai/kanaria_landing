@@ -2,9 +2,8 @@ import Link from "next/link";
 import Logo from "./Logo";
 
 const links = [
-  { href: "#bidet", label: "스마트 비데" },
+  { href: "#how", label: "스마트 비데" },
   { href: "#app", label: "카나리아 앱" },
-  { href: "#how", label: "작동 원리" },
   { href: "#faq", label: "FAQ" },
 ];
 

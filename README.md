@@ -24,7 +24,7 @@ src/app/
   apple-icon.png   # iOS 홈 화면 아이콘 (앱 아이콘)
 src/app/actions/waitlist.ts  # 출시 알림(waiting list) 서버 액션
 supabase/waitlist.sql        # waitlist 테이블 생성 SQL
-src/components/    # 섹션별 컴포넌트 (Nav, Hero, Problem, HowItWorks, SmartBidet,
+src/components/    # 섹션별 컴포넌트 (Nav, Hero, Problem, HowItWorks,
                    # AppFeatures, Trust, Faq, Cta, Contact, Footer)
 public/app/        # 앱 스크린샷 (kanaria_app/screenshots 에서 복사)
 public/brand/      # 로고 SVG, 앱 아이콘
@@ -39,7 +39,7 @@ public/brand/      # 로고 SVG, 앱 아이콘
 
 - 앱 스크린샷 교체: `public/app/*.png` (1179×2556, 파일명 유지)
 - 스토어 링크: `src/components/Cta.tsx` 의 `StoreBadge` 를 `<a href>` 로 교체
-- 스마트 비데 실제 제품 사진 확보 시: `src/components/SmartBidet.tsx` 왼쪽 카드 위쪽에 추가
+- 스마트 비데 실제 제품 사진 확보 시: `src/components/HowItWorks.tsx` 에 추가
 - 도메인: `src/app/layout.tsx` 의 `siteUrl`
 
 ## 주의

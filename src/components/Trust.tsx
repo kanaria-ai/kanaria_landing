@@ -41,15 +41,11 @@ export default function Trust() {
     <section className="mx-auto max-w-6xl px-5 py-24 md:py-32">
       <div className="grid gap-12 md:grid-cols-[0.8fr_1.2fr] md:gap-16">
         <Reveal>
-          <p className="text-sm font-semibold text-brand-deep">개인정보</p>
-          <h2 className="mt-4 text-3xl font-extrabold leading-tight tracking-[-0.02em] md:text-5xl">
-            남에게 보이기 싫은
+          <h2 className="text-3xl font-extrabold leading-tight tracking-[-0.02em] md:text-5xl">
+            데이터는 이렇게
             <br />
-            기록이니까요
+            보호합니다
           </h2>
-          <p className="mt-6 text-lg leading-relaxed text-muted">
-            처음부터 본인만 볼 수 있게 만들었습니다.
-          </p>
         </Reveal>
         <ul className="divide-y divide-line border-y border-line">
           {rows.map((r, i) => (
@@ -61,7 +57,7 @@ export default function Trust() {
                   </svg>
                 </span>
                 <div>
-                  <h3 className="text-lg font-bold">{r.t}</h3>
+                  <h3 className="text-xl font-bold">{r.t}</h3>
                   <p className="mt-2 text-[15px] leading-relaxed text-muted">{r.d}</p>
                 </div>
               </Reveal>

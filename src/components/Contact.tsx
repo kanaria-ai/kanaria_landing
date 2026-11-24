@@ -9,8 +9,7 @@ export default function Contact() {
         <Reveal>
           <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
             <div className="max-w-xl">
-              <p className="text-sm font-semibold text-brand-deep">문의</p>
-              <h2 className="mt-4 text-3xl font-extrabold leading-tight tracking-[-0.02em] md:text-4xl">
+              <h2 className="text-3xl font-extrabold leading-tight tracking-[-0.02em] md:text-5xl">
                 궁금한 점은 이메일로
               </h2>
               <p className="mt-5 text-lg leading-relaxed text-muted">
