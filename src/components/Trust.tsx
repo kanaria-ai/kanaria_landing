@@ -6,7 +6,7 @@ const stroke = { stroke: "#111", strokeWidth: 1.8, strokeLinecap: "round", strok
 const rows: { t: string; d: string; icon: ReactNode }[] = [
   {
     t: "암호화해서 보관하고 폐기",
-    d: "분석에 쓰인 데이터는 암호화된 상태로 보관합니다. 보관 기간이 지나거나 계정을 삭제하면 모두 폐기합니다.",
+    d: "분석에 쓰인 데이터는 보관 기간이 지나거나 계정을 삭제하면 모두 폐기합니다.",
     icon: (
       <>
         <path d="M3 3l18 18" {...stroke} />
@@ -26,7 +26,7 @@ const rows: { t: string; d: string; icon: ReactNode }[] = [
   },
   {
     t: "내 기록은 내 것",
-    d: "가족이 같은 비데를 써도 기록은 계정별로 분리됩니다. 다른 구성원의 기록은 서로 볼 수 없습니다.",
+    d: "가족이 같은 비데를 써도 서로의 기록은 볼 수 없습니다.",
     icon: (
       <>
         <circle cx="12" cy="8.5" r="3.5" {...stroke} />
@@ -48,7 +48,7 @@ export default function Trust() {
             기록이니까요
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-muted">
-            화장실 기록은 누구에게나 민감합니다. 그래서 처음부터 본인만 볼 수 있게 만들었습니다.
+            처음부터 본인만 볼 수 있게 만들었습니다.
           </p>
         </Reveal>
         <ul className="divide-y divide-line border-y border-line">

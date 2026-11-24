@@ -46,7 +46,7 @@ export default function RecordDemo() {
 
       <p className="mt-6 text-lg font-bold">AI가 구분하는 일곱 가지 유형</p>
       <p className="mt-1 text-sm text-muted">
-        하나씩 눌러 보세요. 실제로는 고를 필요 없이 결과만 받습니다.
+        하나씩 눌러 보세요.
       </p>
 
       <div className="mt-4 space-y-2">

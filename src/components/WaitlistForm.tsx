@@ -15,7 +15,7 @@ export default function WaitlistForm() {
         className="mx-auto mt-9 max-w-md rounded-2xl bg-ink px-6 py-5 text-white"
       >
         <p className="text-base font-semibold">{state.message}</p>
-        <p className="mt-1 text-sm text-white/60">2027년 상반기 출시에 맞춰 가장 먼저 알려드릴게요.</p>
+        <p className="mt-1 text-sm text-white/60">출시에 맞춰 알려드릴게요.</p>
       </div>
     );
   }

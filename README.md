@@ -39,7 +39,7 @@ public/brand/      # 로고 SVG, 앱 아이콘
 
 - 앱 스크린샷 교체: `public/app/*.png` (1179×2556, 파일명 유지)
 - 스토어 링크: `src/components/Cta.tsx` 의 `StoreBadge` 를 `<a href>` 로 교체
-- 스마트 비데 실제 제품 사진 확보 시: `src/components/SmartBidet.tsx` 의 `BidetIllustration` 교체
+- 스마트 비데 실제 제품 사진 확보 시: `src/components/SmartBidet.tsx` 왼쪽 카드 위쪽에 추가
 - 도메인: `src/app/layout.tsx` 의 `siteUrl`
 
 ## 주의

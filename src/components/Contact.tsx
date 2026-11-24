@@ -14,8 +14,7 @@ export default function Contact() {
                 궁금한 점은 이메일로
               </h2>
               <p className="mt-5 text-lg leading-relaxed text-muted">
-                제품 문의와 제휴 제안, 언론 관련 연락 모두 아래 주소로 보내 주세요. 확인하는 대로
-                답장드립니다.
+                제품 문의와 제휴 제안, 언론 관련 연락 모두 아래 주소로 보내 주세요.
               </p>
             </div>
             <a

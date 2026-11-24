@@ -3,11 +3,11 @@ import Reveal from "./Reveal";
 const features = [
   {
     t: "광학 센서와 AI로 대변 분석",
-    d: "광학 센서가 만든 데이터를 AI가 분석해 대변의 모양과 상태를 알아냅니다. 결과는 앱에 자동으로 기록됩니다.",
+    d: "대변의 모양과 상태를 분석한 결과가 앱에 바로 기록됩니다.",
   },
   {
     t: "앉는 순간 자동으로 기록 시작",
-    d: "착좌를 감지하면 기록이 시작되고 일어나면 시각과 소요 시간이 자동으로 저장됩니다.",
+    d: "일어나면 기록이 끝납니다. 누를 버튼은 없습니다.",
   },
   {
     t: "2분이면 끝나는 연결",
@@ -15,7 +15,7 @@ const features = [
   },
   {
     t: "앱에서 세정·건조 원격 제어",
-    d: "비데 조작부를 만지지 않아도 앱에서 세정과 건조를 바로 실행할 수 있습니다.",
+    d: "비데 조작부를 만지지 않아도 됩니다.",
   },
 ];
 
@@ -40,11 +40,12 @@ export default function SmartBidet() {
       <div className="mx-auto grid max-w-6xl items-center gap-14 px-5 py-24 md:grid-cols-[0.85fr_1.15fr] md:py-32">
         <Reveal>
           <div className="mx-auto w-full max-w-[420px] overflow-hidden rounded-[2rem] bg-white shadow-card">
-            <div className="bg-gradient-to-b from-brand-soft to-brand-tint px-6 pt-6">
-              <BidetIllustration />
-            </div>
             <div className="p-6">
-              <p className="text-lg font-bold">누가 앉았는지 구분하는 방법</p>
+              <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-ink">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/app/bidet-icon.svg" alt="" width={26} height={26} />
+              </span>
+              <p className="mt-5 text-lg font-bold">누가 앉았는지 구분하는 방법</p>
               <p className="mt-1 text-sm leading-relaxed text-muted">
                 등록된 휴대폰 중 신호가 가장 센 사람의 기록으로 저장합니다.
               </p>
@@ -86,8 +87,8 @@ export default function SmartBidet() {
               기록은 비데가 알아서
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted">
-              버튼을 누르거나 앱을 켤 필요가 없습니다. 비데가 앉은 시각과 소요 시간, 횟수, 누가 썼는지를
-              기록해서 앱으로 보냅니다. 세정과 건조 같은 기본 기능은 일반 비데와 같습니다.
+              비데가 대변 상태를 분석하고 누가 썼는지 구분해서
+              앱으로 보냅니다. 세정과 건조 같은 기본 기능은 일반 비데와 같습니다.
             </p>
           </Reveal>
           <ul className="mt-10 divide-y divide-line border-y border-line">
@@ -113,29 +114,5 @@ export default function SmartBidet() {
         </div>
       </div>
     </section>
-  );
-}
-
-function BidetIllustration() {
-  return (
-    <svg
-      viewBox="40 96 350 280"
-      className="mx-auto block h-auto w-full max-w-[300px]"
-      fill="none"
-      aria-label="카나리아 스마트 비데 일러스트"
-      role="img"
-    >
-      <ellipse cx="200" cy="330" rx="150" ry="36" fill="#111" opacity="0.06" />
-      <rect x="236" y="120" width="104" height="150" rx="22" fill="#fff" stroke="#111" strokeWidth="3" />
-      <rect x="252" y="104" width="72" height="22" rx="8" fill="#fff" stroke="#111" strokeWidth="3" />
-      <path d="M70 262c0-62 56-108 130-108s130 46 130 108v12H70v-12Z" fill="#fff" stroke="#111" strokeWidth="3" />
-      <ellipse cx="200" cy="278" rx="130" ry="42" fill="#fff" stroke="#111" strokeWidth="3" />
-      <ellipse cx="200" cy="278" rx="88" ry="26" fill="#FAFAFA" stroke="#111" strokeWidth="3" />
-      <path d="M90 290c6 40 40 70 110 70s104-30 110-70" stroke="#111" strokeWidth="3" strokeLinecap="round" />
-      <rect x="300" y="256" width="58" height="28" rx="8" fill="#111" />
-      <circle cx="348" cy="270" r="3.5" fill="#FDD23C" />
-      <path d="M362 240c10 10 10 50 0 60" stroke="#EABC00" strokeWidth="3" strokeLinecap="round" />
-      <path d="M376 228c18 18 18 66 0 84" stroke="#EABC00" strokeWidth="3" strokeLinecap="round" opacity="0.5" />
-    </svg>
   );
 }

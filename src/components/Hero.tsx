@@ -16,7 +16,7 @@ export default function Hero() {
         <div>
           <p className="mb-5 inline-flex items-center gap-2 rounded-pill border border-brand-deep/30 bg-white/70 px-3.5 py-1.5 text-[13px] font-semibold text-ink-2">
             {/* <span className="h-1.5 w-1.5 rounded-full bg-brand-deep" /> */}
-            2027년 상반기 카나리아 스마트 비데 · 엡 출시 예정
+            2027년 상반기 카나리아 스마트 비데 · 앱 출시 예정
           </p>
           <h1 className="text-[2.5rem] font-extrabold leading-[1.15] tracking-[-0.02em] text-ink sm:text-5xl md:text-[3.6rem]">
             매일 쓰는 화장실에서
@@ -25,7 +25,7 @@ export default function Hero() {
           <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted">
             화장실을 사용하면, 자동으로 비데가 기록을 남기고
             <strong className="font-semibold text-ink"> 건강 스코어</strong>를
-            계산합니다. 수첩에 적거나 시간을 외울 필요가 없습니다.
+            계산합니다.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
@@ -43,8 +43,8 @@ export default function Hero() {
           </div>
           <ul className="mt-9 space-y-2 text-base text-ink-2">
             {[
-              ["시간과 횟수는 비데가 ", "자동 기록"],
               ["대변 모양과 상태는 ", "AI가 분석"],
+              ["화장실 사용은 비데가 ", "자동 기록"],
               ["가족 구성원은 ", "자동 구분"],
             ].map(([lead, key]) => (
               <li key={key}>
@@ -83,9 +83,6 @@ export default function Hero() {
               방금 기록됨
             </p>
             <p className="mt-1 text-lg font-bold">오후 3:19 · 6분</p>
-            <p className="mt-1 text-xs text-white/70">
-              스마트 비데가 자동으로 저장했어요
-            </p>
             <div className="mt-3 flex gap-2">
               <span className="rounded-pill bg-brand px-2.5 py-1 text-[11px] font-semibold text-ink">
                 배변 1회

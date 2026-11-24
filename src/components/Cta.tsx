@@ -27,11 +27,10 @@ export default function Cta() {
             이제 비데에 맡기세요
           </h2>
           <p className="mx-auto mt-5 max-w-md text-[17px] leading-relaxed text-ink/70">
-            카나리아 스마트 비데와 카나리아 앱은 2027년 상반기 출시 예정입니다. 이메일을 남겨 두면
-            출시 소식과 앱 다운로드 안내를 가장 먼저 받을 수 있어요.
+            이메일을 남겨 두면 출시 소식과 앱 다운로드 안내를 보내 드립니다.
           </p>
           <WaitlistForm />
-          <p className="mt-6 text-sm text-ink/60">App Store · Google Play 2027년 상반기 출시 예정</p>
+          <p className="mt-6 text-sm text-ink/60">App Store · Google Play</p>
         </div>
       </Reveal>
     </section>
